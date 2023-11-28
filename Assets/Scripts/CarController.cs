@@ -4,7 +4,7 @@ using UnityEngine.AI;
 public class CarController : MonoBehaviour
 {
     public bool isMoving = false;
-    public float moveSpeed = 5f;
+    public float moveSpeed = 0.3f;
 
 
 

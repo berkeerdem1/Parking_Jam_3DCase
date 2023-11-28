@@ -16,6 +16,7 @@ TagManager:
   - front4
   - back4
   - wall
+  - TurnPoint
   layers:
   - Default
   - TransparentFX

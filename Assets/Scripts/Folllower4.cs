@@ -11,6 +11,11 @@ public class Folllower4 : MonoBehaviour
     public bool isFront;
     public bool isBack;
     Vector3 startPosition;
+    [Header("Yolu takip donusu")]
+    public Transform[] Targets;
+    public int indexTarget = 0;
+    public float TurnSpeed = 30f;
+    private bool isTurn = false;
     public void Start()
     {
         startPosition = transform.position;
@@ -22,17 +27,65 @@ public class Folllower4 : MonoBehaviour
         {
             distance += speed + Time.deltaTime;
             transform.position = pathCreator.path.GetPointAtDistance(distance);
+            if (indexTarget < Targets.Length)
+            {
+                // Eğer dönüş yapılmadıysa ve araç hedef noktaya yeterince yaklaştıysa, dönüş yap
+                if (!isTurn && Vector3.Distance(transform.position, Targets[indexTarget].position) < 0.5f)
+                {
+                    // Aracın y ekseni etrafında 90 derece dönüş
+                    transform.Rotate(0, 90, 0);
+                    isTurn = true; // Dönüş yapıldı
+                }
+
+                // Aracın hareketi
+                transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+                // Eğer araç hedef noktaya yeterince yaklaştıysa, bir sonraki hedefe geç
+                float mesafe = Vector3.Distance(transform.position, Targets[indexTarget].position);
+                if (mesafe < 0.5f)
+                {
+                    indexTarget++;
+                    isTurn = false; // Bir sonraki hedefe geçildiğinde dondu değişkenini sıfırla
+                }
+            }
         }
         if (isBack)
         {
             distance += speed + Time.deltaTime;
             transform.position = BackPathCreator.path.GetPointAtDistance(distance);
+
+            // Eger ilk hedefe yaklasiliyorsa ve daha once donus yapimamissa, eksi 90 derece don
+            if (!isTurn && Vector3.Distance(transform.position, Targets[indexTarget].position) < 0.5f)
+            {
+                Debug.Log("4. araba ilk kez donus yapti ");
+                transform.Rotate(0, -90, 0);
+                isTurn = true;
+                // if (indexTarget == 0)
+                // {
+                //     Debug.Log("4. araba ilk kez donus yapti ");
+                //     transform.Rotate(0, -90, 0);
+                //     isTurn = true;
+                // }
+                if (indexTarget > 0)
+                {
+                    transform.Rotate(0, 90, 0);
+                    isTurn = true;
+                }
+            }
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+            float mesafe = Vector3.Distance(transform.position, Targets[indexTarget].position);
+            if (mesafe < 0.5f)
+            {
+                indexTarget++;
+                isTurn = false;
+            }
         }
         ClickDetector();
     }
     public void ClickDetector()
     {
-        if (Input.GetMouseButtonDown(0)) // Sol tıklama için
+        if (Input.GetMouseButtonDown(0)) // Sol tiklama icin
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -42,8 +95,8 @@ public class Folllower4 : MonoBehaviour
                 if (hit.collider != null && hit.collider.CompareTag("front4"))
                 {
                     isFront = true;
-                    // Tıklanan obje istediğiniz tag'e sahiptir
-                    Debug.Log("one tiklandi " + hit.collider.gameObject.name);
+                    // Tiklanan obje istediginiz tag'e sahiptir
+                    Debug.Log("4. arabanin onune tiklandi ");
                 }
             }
             if (Physics.Raycast(ray, out hit))
@@ -51,8 +104,7 @@ public class Folllower4 : MonoBehaviour
                 if (hit.collider != null && hit.collider.CompareTag("back4"))
                 {
                     isBack = true;
-                    // Tıklanan obje istediğiniz tag'e sahiptir
-                    Debug.Log("arkaya tiklandi " + hit.collider.gameObject.name);
+                    Debug.Log("4. arabanin arkasina tiklandi ");
                 }
             }
         }

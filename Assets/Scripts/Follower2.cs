@@ -16,6 +16,8 @@ public class Follower2 : MonoBehaviour
     public int indexTarget = 0;
     public float TurnSpeed = 30f;
     private bool isTurn = false;
+    public Transform ConfettiPos;
+    public GameObject Confetti;
     public void Start()
     {
         startPosition = transform.position;
@@ -87,6 +89,7 @@ public class Follower2 : MonoBehaviour
     {
         if (other.gameObject.tag == "finish")
         {
+            Instantiate(Confetti, ConfettiPos.transform.position, Quaternion.identity);
             print("degdi");
             Destroy(gameObject);
         }

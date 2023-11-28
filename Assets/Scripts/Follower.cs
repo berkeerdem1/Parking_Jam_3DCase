@@ -12,9 +12,11 @@ public class Follower : MonoBehaviour
     public CarController cars;
     public bool isFront;
     public bool isBack;
+    Vector3 startPosition;
     public void Start()
     {
         cars = GetComponent<CarController>();
+        startPosition = transform.position;
     }
 
     void Update()
@@ -33,8 +35,9 @@ public class Follower : MonoBehaviour
     }
     public void ClickDetectr()
     {
-        if (Input.GetMouseButtonDown(0)) // Sol tıklama için
+        if (Input.GetMouseButtonDown(0))
         {
+            //Obejnin neresine tikladigimizi kontrol etme
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
@@ -43,7 +46,6 @@ public class Follower : MonoBehaviour
                 if (hit.collider != null && hit.collider.CompareTag("front"))
                 {
                     isFront = true;
-                    // Tıklanan obje istediğiniz tag'e sahiptir
                     Debug.Log("one tiklandi " + hit.collider.gameObject.name);
                 }
             }
@@ -52,10 +54,35 @@ public class Follower : MonoBehaviour
                 if (hit.collider != null && hit.collider.CompareTag("back"))
                 {
                     isBack = true;
-                    // Tıklanan obje istediğiniz tag'e sahiptir
                     Debug.Log("arkaya tiklandi " + hit.collider.gameObject.name);
                 }
             }
+        }
+    }
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "finish")
+        {
+            print("degdi");
+            Destroy(gameObject);
+        }
+        if (other.gameObject.tag == "car" || other.gameObject.tag == "wall")
+        {
+            print("arabaya degdi");
+            isFront = false;
+            isBack = false;
+
+            //baslangic pozisyonuna don
+            transform.position = startPosition;
+            distance = 0;
+
+            //Carptıgı arabanin hareket etmesini durdur
+            Rigidbody otherRigidbody = other.gameObject.GetComponent<Rigidbody>();
+            if (otherRigidbody != null)
+            {
+                otherRigidbody.constraints = RigidbodyConstraints.FreezeAll;
+            }
+
         }
     }
 }

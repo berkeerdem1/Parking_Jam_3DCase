@@ -38,13 +38,4 @@ public class CarController : MonoBehaviour
         isMoving = true;
     }
 
-    void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.tag == "finish")
-        {
-            print("degdi");
-            isMoving = false;
-            Destroy(gameObject);
-        }
-    }
 }

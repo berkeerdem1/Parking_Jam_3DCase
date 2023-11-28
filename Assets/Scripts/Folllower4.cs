@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using PathCreation;
-public class Follower2 : MonoBehaviour
+public class Folllower4 : MonoBehaviour
 {
     public PathCreator pathCreator;
     public PathCreator BackPathCreator;
@@ -39,7 +39,7 @@ public class Follower2 : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider != null && hit.collider.CompareTag("front2"))
+                if (hit.collider != null && hit.collider.CompareTag("front4"))
                 {
                     isFront = true;
                     // Tıklanan obje istediğiniz tag'e sahiptir
@@ -48,7 +48,7 @@ public class Follower2 : MonoBehaviour
             }
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider != null && hit.collider.CompareTag("back2"))
+                if (hit.collider != null && hit.collider.CompareTag("back4"))
                 {
                     isBack = true;
                     // Tıklanan obje istediğiniz tag'e sahiptir

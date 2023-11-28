@@ -10,6 +10,11 @@ public class Follower3 : MonoBehaviour
     float distance;
     public bool isFront;
     public bool isBack;
+    Vector3 startPosition;
+    public void Start()
+    {
+        startPosition = transform.position;
+    }
 
     void Update()
     {
@@ -58,6 +63,23 @@ public class Follower3 : MonoBehaviour
         {
             print("degdi");
             Destroy(gameObject);
+        }
+        if (other.gameObject.tag == "car" || other.gameObject.tag == "wall")
+        {
+            print("arabaya degdi");
+            isFront = false;
+            isBack = false;
+
+            //baslangic pozisyonuna don
+            transform.position = startPosition;
+            distance = 0;
+
+            //Carptıgı arabanin hareket etmesini durdur
+            Rigidbody otherRigidbody = other.gameObject.GetComponent<Rigidbody>();
+            if (otherRigidbody != null)
+            {
+                otherRigidbody.constraints = RigidbodyConstraints.FreezeAll;
+            }
         }
     }
 }

@@ -12,6 +12,10 @@ TagManager:
   - back2
   - front3
   - back3
+  - car
+  - front4
+  - back4
+  - wall
   layers:
   - Default
   - TransparentFX

@@ -2,36 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using PathCreation;
-
-public class Follower : MonoBehaviour
+public class Follower3 : MonoBehaviour
 {
     public PathCreator pathCreator;
     public PathCreator BackPathCreator;
     public float speed = 5f;
     float distance;
-    public CarController cars;
     public bool isFront;
     public bool isBack;
-    public void Start()
-    {
-        cars = GetComponent<CarController>();
-    }
 
     void Update()
     {
-        if (cars.isMoving && isFront)
+        if (isFront)
         {
             distance += speed + Time.deltaTime;
             transform.position = pathCreator.path.GetPointAtDistance(distance);
         }
-        if (cars.isMoving && isBack)
+        if (isBack)
         {
             distance += speed + Time.deltaTime;
             transform.position = BackPathCreator.path.GetPointAtDistance(distance);
         }
-        ClickDetectr();
+        ClickDetector();
     }
-    public void ClickDetectr()
+    public void ClickDetector()
     {
         if (Input.GetMouseButtonDown(0)) // Sol tıklama için
         {
@@ -40,7 +34,7 @@ public class Follower : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider != null && hit.collider.CompareTag("front"))
+                if (hit.collider != null && hit.collider.CompareTag("front3"))
                 {
                     isFront = true;
                     // Tıklanan obje istediğiniz tag'e sahiptir
@@ -49,13 +43,21 @@ public class Follower : MonoBehaviour
             }
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider != null && hit.collider.CompareTag("back"))
+                if (hit.collider != null && hit.collider.CompareTag("back3"))
                 {
                     isBack = true;
                     // Tıklanan obje istediğiniz tag'e sahiptir
                     Debug.Log("arkaya tiklandi " + hit.collider.gameObject.name);
                 }
             }
+        }
+    }
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "finish")
+        {
+            print("degdi");
+            Destroy(gameObject);
         }
     }
 }

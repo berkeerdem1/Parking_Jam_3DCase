@@ -5,13 +5,7 @@ public class CarController : MonoBehaviour
 {
     public bool isMoving = false;
     public float moveSpeed = 5f;
-    public Transform frontClickPoint;  // Ön tıklama noktasının referansı
-    public Transform backClickPoint;   // Ark tıklama noktasının referansı
-    // public Clickd click;
-    // void Start()
-    // {
-    //     click=GetComponent<ClickSelector>();
-    // }
+
 
 
     void Update()
@@ -24,11 +18,11 @@ public class CarController : MonoBehaviour
 
     void MoveCar()
     {
-        Vector3 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        targetPosition.y = transform.position.y; // Araç yerden yükseklikte hareket etmeli
+        // Vector3 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        // targetPosition.y = transform.position.y; // Araç yerden yükseklikte hareket etmeli
 
-        transform.LookAt(targetPosition);
-        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
+        // transform.LookAt(targetPosition);
+        // transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
     }
     void BackMoveCar()
     {
@@ -49,6 +43,7 @@ public class CarController : MonoBehaviour
         if (other.gameObject.tag == "finish")
         {
             print("degdi");
+            isMoving = false;
             Destroy(gameObject);
         }
     }

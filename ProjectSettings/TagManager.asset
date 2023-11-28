@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - back
+  - Road
+  - finish
+  - front
+  - front2
+  - back2
+  - front3
+  - back3
   layers:
   - Default
   - TransparentFX

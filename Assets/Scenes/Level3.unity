@@ -1813,6 +1813,53 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476579761}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &515952346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 515952348}
+  - component: {fileID: 515952347}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &515952347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515952346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad314cd7fb8fa349a35e7e6ab2999a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Level1
+  ConfettiNextLevel: {fileID: 7778548527041807929, guid: 126d32bcaa58be0479cb6f8d065303a8, type: 3}
+  ConfettiPos: {fileID: 1558060386}
+--- !u!4 &515952348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515952346}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.3539047, y: -7.6395607, z: 1.1580794}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &541969827
 GameObject:
   m_ObjectHideFlags: 0
@@ -4958,6 +5005,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7085f03da9f8aa488601df4b946e415, type: 3}
+--- !u!1 &1558060385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1558060386}
+  m_Layer: 0
+  m_Name: ConfettiNextLevelPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1558060386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558060385}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.35359013, y: -0.5448283, z: -0.4472722, w: 0.61488515}
+  m_LocalPosition: {x: 4.44, y: 10.01, z: 3.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -112.749, y: 113.836, z: -205.217}
 --- !u!1 &1564233652
 GameObject:
   m_ObjectHideFlags: 0
@@ -5895,3 +5973,5 @@ SceneRoots:
   - {fileID: 574507545}
   - {fileID: 364560843}
   - {fileID: 1938161139}
+  - {fileID: 515952348}
+  - {fileID: 1558060386}

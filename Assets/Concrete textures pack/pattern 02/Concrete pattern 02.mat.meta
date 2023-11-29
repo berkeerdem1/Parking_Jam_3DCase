@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 74c690b29deaf184eb0f56c386f5ef8f
+labels:
+- Architecture
+- Ground
+- Metal
+- Pattern
+- SciFi
+- Concrete
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 12951
+  packageName: Concrete Textures Pack
+  packageVersion: 1.00
+  assetPath: Assets/Concrete textures pack/pattern 02/Concrete pattern 02.mat
+  uploadId: 29414

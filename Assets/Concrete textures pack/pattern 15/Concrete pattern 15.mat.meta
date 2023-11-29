@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 6c096acbd65465b438d9b0a3d141cff1
+labels:
+- Concrete
+- Damaged
+- Pattern
+- Reinforced
+- Metlal
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 12951
+  packageName: Concrete Textures Pack
+  packageVersion: 1.00
+  assetPath: Assets/Concrete textures pack/pattern 15/Concrete pattern 15.mat
+  uploadId: 29414

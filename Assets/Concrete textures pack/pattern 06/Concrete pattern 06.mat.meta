@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 8e53f458c50238748a0e25fbe049b465
+labels:
+- Architecture
+- Concrete
+- Industrial
+- Pattern
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 12951
+  packageName: Concrete Textures Pack
+  packageVersion: 1.00
+  assetPath: Assets/Concrete textures pack/pattern 06/Concrete pattern 06.mat
+  uploadId: 29414

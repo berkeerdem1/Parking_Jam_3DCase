@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 52c9083b299dfa3479caa56bb9f0a98c
+labels:
+- Architecture
+- Concrete
+- Ground
+- Pattern
+- Wall
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 12951
+  packageName: Concrete Textures Pack
+  packageVersion: 1.00
+  assetPath: Assets/Concrete textures pack/pattern 03/Concrete pattern 03.mat
+  uploadId: 29414

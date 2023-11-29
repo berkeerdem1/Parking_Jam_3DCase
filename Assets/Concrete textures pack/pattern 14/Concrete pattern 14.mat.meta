@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: acbeb59509e47e942937ab47a0abc310
+labels:
+- Concrete
+- Pattern
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 12951
+  packageName: Concrete Textures Pack
+  packageVersion: 1.00
+  assetPath: Assets/Concrete textures pack/pattern 14/Concrete pattern 14.mat
+  uploadId: 29414

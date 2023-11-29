@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 90caba3031f3bb6489b26535a49cd81d
+labels:
+- Ceiling
+- Fabric
+- Fiber
+- Pattern
+- Plaster
+- Rough
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 12951
+  packageName: Concrete Textures Pack
+  packageVersion: 1.00
+  assetPath: Assets/Concrete textures pack/pattern 09/Concrete pattern 09.mat
+  uploadId: 29414

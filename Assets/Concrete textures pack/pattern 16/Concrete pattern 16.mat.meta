@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: edb56784830ff6e48bc903e1da5bc5ff
+labels:
+- Concrete
+- Pattern
+- Sand
+- Sculpted
+- Ripples
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 12951
+  packageName: Concrete Textures Pack
+  packageVersion: 1.00
+  assetPath: Assets/Concrete textures pack/pattern 16/Concrete pattern 16.mat
+  uploadId: 29414

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4bc462b665aa4b04fac0cadf86f4eb04
+timeCreated: 1513344816
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/ExampleAssets/Models/Materials/wood.mat
+  uploadId: 253927

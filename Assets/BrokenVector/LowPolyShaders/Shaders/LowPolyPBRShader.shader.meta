@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a97e290cd0cec1a4cb176e474e69c1dc
+labels:
+- LowPoly
+- shader
+- Material
+- PBR
+timeCreated: 1489240532
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyShaders/Shaders/LowPolyPBRShader.shader
+  uploadId: 253927

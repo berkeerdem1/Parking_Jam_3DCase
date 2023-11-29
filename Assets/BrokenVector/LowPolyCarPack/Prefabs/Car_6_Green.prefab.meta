@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 798591b2838b0844c90eeed933a85d3d
+labels:
+- lowpoly
+- vehicle
+- car
+timeCreated: 1513013834
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/Prefabs/Car_6_Green.prefab
+  uploadId: 253927

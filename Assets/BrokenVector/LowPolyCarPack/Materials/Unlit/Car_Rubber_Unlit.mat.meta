@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4810b56cdf36d5b428c7999d26387dea
+timeCreated: 1513014196
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/Materials/Unlit/Car_Rubber_Unlit.mat
+  uploadId: 253927

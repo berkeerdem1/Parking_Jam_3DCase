@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 98f7409cb2311754790226154951b58b
+timeCreated: 1513008865
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/Materials/PBR/Car_Lamps.mat
+  uploadId: 253927

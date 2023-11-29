@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 88c9792d12fc0574d93568b531a1917c
+labels:
+- lowpoly
+- vehicle
+- bus
+timeCreated: 1513010882
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/Prefabs/Bus_Blue.prefab
+  uploadId: 253927

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a37b2602c9050a4469094841aeed030b
+labels:
+- lowpoly
+- vehicle
+- truck
+timeCreated: 1513013834
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/Prefabs/Truck_2_Silver.prefab
+  uploadId: 253927

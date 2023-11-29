@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2acf3729bc7663740a4b13c7b0129ad5
+labels:
+- lowpoly
+- vehicle
+- truck
+timeCreated: 1513010881
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/Prefabs/Truck_1_Blue.prefab
+  uploadId: 253927

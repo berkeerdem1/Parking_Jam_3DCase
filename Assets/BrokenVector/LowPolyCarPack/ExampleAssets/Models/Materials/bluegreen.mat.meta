@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2f741ca76d5d14241b47bc6e8c2a42c8
+timeCreated: 1513344816
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/ExampleAssets/Models/Materials/bluegreen.mat
+  uploadId: 253927

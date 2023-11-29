@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2e2f85c2d31ee15459da8b5872f104f5
+timeCreated: 1513008865
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/Materials/PBR/Car_Windows.mat
+  uploadId: 253927

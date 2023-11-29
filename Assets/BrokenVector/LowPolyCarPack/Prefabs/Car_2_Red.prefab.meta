@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 8e6432cafa5803946a9c3011999db1f7
+labels:
+- lowpoly
+- vehicle
+- car
+timeCreated: 1513013837
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/Prefabs/Car_2_Red.prefab
+  uploadId: 253927

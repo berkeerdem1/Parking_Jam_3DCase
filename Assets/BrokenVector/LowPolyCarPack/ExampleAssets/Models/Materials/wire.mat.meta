@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dcf6ff65abb46fd44b9b46a4ea2769c2
+timeCreated: 1513344816
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/ExampleAssets/Models/Materials/wire.mat
+  uploadId: 253927

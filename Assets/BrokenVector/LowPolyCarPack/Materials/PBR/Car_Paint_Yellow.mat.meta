@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4add69fc6d74a5946ae4c9a81ed429ef
+timeCreated: 1513013777
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/Materials/PBR/Car_Paint_Yellow.mat
+  uploadId: 253927

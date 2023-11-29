@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: eebeaf026736b6546909968c8b4080b2
+labels:
+- lowpoly
+- vehicle
+- car
+timeCreated: 1513013839
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/Prefabs/Car_1_Silver.prefab
+  uploadId: 253927

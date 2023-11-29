@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2afdb63b43302a8498b4e6c3f80d52e4
+timeCreated: 1513344816
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/ExampleAssets/Models/Materials/roadalt.mat
+  uploadId: 253927

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 098d4ffc7d7b82d4db28426a03a46477
+labels:
+- Unlit
+- shader
+- Material
+- LowPoly
+timeCreated: 1489240511
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyShaders/Shaders/LowPolyUnlitShader.shader
+  uploadId: 253927

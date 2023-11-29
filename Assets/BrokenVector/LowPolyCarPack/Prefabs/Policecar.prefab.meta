@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 1bc3a967e1e743b41b30f111c58ba985
+labels:
+- lowpoly
+- vehicle
+- car
+timeCreated: 1513010882
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/Prefabs/Policecar.prefab
+  uploadId: 253927

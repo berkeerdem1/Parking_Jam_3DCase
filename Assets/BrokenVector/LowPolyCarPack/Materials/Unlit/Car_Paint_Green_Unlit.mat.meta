@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f53167daf8f01e34c963df78be8509fd
+timeCreated: 1513014196
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/Materials/Unlit/Car_Paint_Green_Unlit.mat
+  uploadId: 253927

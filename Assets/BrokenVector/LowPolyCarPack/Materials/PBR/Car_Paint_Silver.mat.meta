@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2a6c8fdceeee488418663a46854ab545
+timeCreated: 1513013777
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 101798
+  packageName: Low Poly Cars
+  packageVersion: 1.1
+  assetPath: Assets/BrokenVector/LowPolyCarPack/Materials/PBR/Car_Paint_Silver.mat
+  uploadId: 253927

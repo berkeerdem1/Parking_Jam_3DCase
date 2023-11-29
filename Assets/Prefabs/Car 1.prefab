@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1104010214887555330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3477925252608727798}
+  m_Layer: 0
+  m_Name: smilePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3477925252608727798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104010214887555330}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0142, y: 0.0066, z: -0.0045}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4063249955741824761}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2148952529405108548
 GameObject:
   m_ObjectHideFlags: 0
@@ -53,6 +84,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.016857456, y: 0.016650295, z: 0.01999557}
   m_Center: {x: -0.013564267, y: -0.0016134655, z: -0.000021061893}
+--- !u!1 &4291275818343724156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8203749216718519189}
+  m_Layer: 0
+  m_Name: angryPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8203749216718519189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4291275818343724156}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0142, y: 0.0066, z: -0.0045}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4063249955741824761}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6537328939932406665
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,31 +198,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.48
+      value: 1.68
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.56
+      value: 1.38
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.44
+      value: 1.88
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7054181
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.000000015417417
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.70879143
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000015491127
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -168,7 +230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90.273
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -187,6 +249,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 400000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3642903575987494660}
+    - targetCorrespondingSourceObject: {fileID: 400000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3477925252608727798}
+    - targetCorrespondingSourceObject: {fileID: 400000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8203749216718519189}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
       insertIndex: -1
@@ -241,9 +309,10 @@ MonoBehaviour:
   Targets:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   TurnSpeed: 30
   ConfettiPos: {fileID: 0}
-  Confetti: {fileID: 0}
+  Confetti: {fileID: 2935576965831313811, guid: e243c47dc774e4a44a0016b99b3de563, type: 3}
 --- !u!65 &9152298571017864450
 BoxCollider:
   m_ObjectHideFlags: 0

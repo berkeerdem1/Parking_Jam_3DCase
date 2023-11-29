@@ -13,11 +13,13 @@ public class Follower2 : MonoBehaviour
     Vector3 startPosition;
     [Header("Yolu takip donusu")]
     public Transform[] Targets;
+    public Transform[] BackTargets;
     public int indexTarget = 0;
     public float TurnSpeed = 30f;
     private bool isTurn = false;
     public Transform ConfettiPos;
     public GameObject Confetti;
+
     public void Start()
     {
         startPosition = transform.position;
@@ -29,32 +31,50 @@ public class Follower2 : MonoBehaviour
         {
             distance += speed + Time.deltaTime;
             transform.position = pathCreator.path.GetPointAtDistance(distance);
-            if (indexTarget < Targets.Length)
+            
+            // Eğer dönüş yapılmadıysa ve araç hedef noktaya yeterince yaklaştıysa, dönüş yap
+            if (!isTurn && Vector3.Distance(transform.position, Targets[indexTarget].position) < 0.5f)
             {
-                // Eğer dönüş yapılmadıysa ve araç hedef noktaya yeterince yaklaştıysa, dönüş yap
-                if (!isTurn && Vector3.Distance(transform.position, Targets[indexTarget].position) < 0.5f)
-                {
-                    // Aracın y ekseni etrafında 90 derece dönüş
-                    transform.Rotate(0, 90, 0);
-                    isTurn = true; // Dönüş yapıldı
-                }
-
-                // Aracın hareketi
-                transform.Translate(Vector3.forward * speed * Time.deltaTime);
-
-                // Eğer araç hedef noktaya yeterince yaklaştıysa, bir sonraki hedefe geç
-                float mesafe = Vector3.Distance(transform.position, Targets[indexTarget].position);
-                if (mesafe < 0.5f)
-                {
-                    indexTarget++;
-                    isTurn = false; // Bir sonraki hedefe geçildiğinde dondu değişkenini sıfırla
-                }
+                // Aracın y ekseni etrafında 90 derece dönüş
+                transform.Rotate(0, 90, 0);
+                isTurn = true; // Dönüş yapıldı
             }
+
+            // Aracın hareketi
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+            // Eğer araç hedef noktaya yeterince yaklaştıysa, bir sonraki hedefe geç
+            float mesafe = Vector3.Distance(transform.position, Targets[indexTarget].position);
+            if (mesafe < 0.5f)
+            {
+                indexTarget++;
+                isTurn = false; // Bir sonraki hedefe geçildiğinde dondu değişkenini sıfırla
+            }
+            
         }
         if (isBack)
         {
             distance += speed + Time.deltaTime;
             transform.position = BackPathCreator.path.GetPointAtDistance(distance);
+            // Eger ilk hedefe yaklasiliyorsa ve daha once donus yapimamissa, eksi 90 derece don
+            if (indexTarget==0 && !isTurn && Vector3.Distance(transform.position, BackTargets[indexTarget].position) < 0.5f)
+            {
+                transform.Rotate(0, -90, 0);
+                isTurn = true;  
+            }
+            if (indexTarget > 0 && !isTurn && Vector3.Distance(transform.position, BackTargets[indexTarget].position) < 0.5f)
+            {
+                transform.Rotate(0, 90, 0);
+                isTurn = true;
+            }
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+            float mesafe = Vector3.Distance(transform.position, BackTargets[indexTarget].position);
+            if (mesafe < 0.5f)
+            {
+                indexTarget++;
+                isTurn = false;
+            }
         }
         ClickDetector();
     }
@@ -79,7 +99,6 @@ public class Follower2 : MonoBehaviour
                 if (hit.collider != null && hit.collider.CompareTag("back2"))
                 {
                     isBack = true;
-                    // Tıklanan obje istediğiniz tag'e sahiptir
                     Debug.Log("arkaya tiklandi " + hit.collider.gameObject.name);
                 }
             }
@@ -103,7 +122,7 @@ public class Follower2 : MonoBehaviour
             transform.position = startPosition;
             distance = 0;
 
-            //Carptıgı arabanin hareket etmesini durdur
+            //Carptigi arabanin hareket etmesini durdur
             Rigidbody otherRigidbody = other.gameObject.GetComponent<Rigidbody>();
             if (otherRigidbody != null)
             {

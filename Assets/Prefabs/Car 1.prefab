@@ -258,9 +258,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3989835168811859906}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8536222161532150894}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
       insertIndex: -1
@@ -274,20 +271,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: c5f8cfdbf35eea042bfcea749a4e7bc2, type: 3}
   m_PrefabInstance: {fileID: 4063249955741691001}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3989835168811859906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4063249955741723353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82e25fc006c992946bdad2f1b7e79927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMoving: 0
-  moveSpeed: 0.3
 --- !u!114 &8536222161532150894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,13 +286,14 @@ MonoBehaviour:
   pathCreator: {fileID: 0}
   BackPathCreator: {fileID: 0}
   speed: 0.3
-  cars: {fileID: 3989835168811859906}
+  timer: 0
   isFront: 0
   isBack: 0
   Targets:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  BackTargets: []
   TurnSpeed: 30
   ConfettiPos: {fileID: 0}
   Confetti: {fileID: 2935576965831313811, guid: e243c47dc774e4a44a0016b99b3de563, type: 3}

@@ -2103,6 +2103,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 97115454019421460, guid: 60fabdfd54aa07a439bfbec92c1093c8, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 97115454019421464, guid: 60fabdfd54aa07a439bfbec92c1093c8, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 97115454019421466, guid: 60fabdfd54aa07a439bfbec92c1093c8, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 97115454019421468, guid: 60fabdfd54aa07a439bfbec92c1093c8, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 97115454019421470, guid: 60fabdfd54aa07a439bfbec92c1093c8, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 97115454025299868, guid: 60fabdfd54aa07a439bfbec92c1093c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.16
@@ -4301,6 +4321,26 @@ PrefabInstance:
       propertyPath: m_TagString
       value: car
       objectReference: {fileID: 0}
+    - target: {fileID: 5210630141422871264, guid: 7bf0c7c9c658ed942926fce31c669512, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5210630141422871266, guid: 7bf0c7c9c658ed942926fce31c669512, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5210630141422871268, guid: 7bf0c7c9c658ed942926fce31c669512, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5210630141422871270, guid: 7bf0c7c9c658ed942926fce31c669512, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5210630141422871276, guid: 7bf0c7c9c658ed942926fce31c669512, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4913,6 +4953,26 @@ PrefabInstance:
     - target: {fileID: 4063249955741824761, guid: 6a67383b7c893dd4ba319376dec87631, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063249955748004977, guid: 6a67383b7c893dd4ba319376dec87631, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063249955748004985, guid: 6a67383b7c893dd4ba319376dec87631, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063249955748004987, guid: 6a67383b7c893dd4ba319376dec87631, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063249955748004989, guid: 6a67383b7c893dd4ba319376dec87631, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063249955748004991, guid: 6a67383b7c893dd4ba319376dec87631, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8536222161532150894, guid: 6a67383b7c893dd4ba319376dec87631, type: 3}
       propertyPath: speed
